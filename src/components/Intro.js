@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/Intro.css'
 import Typist from 'react-typist'
 import "react-typist/dist/Typist.css";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 class Intro extends React.Component {
     render () {
@@ -17,7 +18,10 @@ class Intro extends React.Component {
                     I'm <span className='index-name'>Myles.</span>
                     
                 </Typist>
-                <p>I'm a software engineer currently based in Denver, CO. I'm interested in full-stack development. But you'll probably find me working on just about anything.</p>
+                <p style={{color: 'black'}}>I'm a software engineer currently based in Denver, CO. I'm interested in full-stack development. But you'll probably find me working on just about anything.</p>
+                <div className='arrow-down'>
+                    <ArrowDownwardIcon className='arrow'/>
+                </div>
             </div>
         )
     }

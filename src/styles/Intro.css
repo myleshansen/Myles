@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 18%;
+    align-content: center;
+    justify-content: center;
     min-height: 100vh;
     background-color: black;
+    color: white;
     
 }
 
@@ -19,3 +21,13 @@
     color: var(--green-bright);
     padding-left: 4px;
   }
+
+.arrow-down {
+  align-self: flex-end;
+  padding-right: 5%;
+  bottom: 10%;
+}
+
+.arrow {
+  transform: scale(1.8);
+}
