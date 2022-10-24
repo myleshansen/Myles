@@ -1,33 +1,30 @@
-#intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: black;
-    color: white;
-    
+.intro {
+  color: var(--light-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .Typist {
-    color: var(--lightest-slate);
-    text-align: center;
-    font-size: 76px;
-    margin-top: 50px;
-    color: white;
-  }
-  .Typist .Cursor--blinking {
-    color: var(--green-bright);
-    padding-left: 4px;
-  }
+  color: var(--light-cyan);
+  text-align: center;
+  font-size: 76px;
+  margin-top: 50px;
+}
+.Typist .Cursor--blinking {
+  color: var(--green-bright);
+  padding-left: 4px;
+}
 
 .arrow-down {
-  align-self: flex-end;
-  padding-right: 5%;
-  bottom: 10%;
+  transform: scale(1.8);
+  padding-top: 5%;
 }
 
 .arrow {
-  transform: scale(1.8);
+
 }
+

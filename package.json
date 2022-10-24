@@ -8,11 +8,15 @@
     "@emotion/styled": "^11.10.4",
     "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.8",
     "cra-template": "1.2.0",
+    "framer-motion": "^7.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "rsuite": "^5.20.0"
   },
   "scripts": {
     "predeploy": "npm run build",
