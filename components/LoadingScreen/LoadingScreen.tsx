@@ -23,7 +23,7 @@ const LoadingScreen = () => {
     if (fadeState === "loading") {
       setTimeout(() => {
         setFadeState("fading");
-      }, 1500);
+      }, 3000);
     }
   }, [fadeState]);
 
