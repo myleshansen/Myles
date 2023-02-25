@@ -5,20 +5,20 @@
   display: none;
 }
 
-/*@font-face {
-  font-family: 'Montserrat';
+@font-face {
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
 }
-*/
+
 
 html,
 body {

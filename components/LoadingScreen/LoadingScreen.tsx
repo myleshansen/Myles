@@ -6,7 +6,6 @@ const LoadingScreen = () => {
   const [numLogos, setNumLogos] = useState(0);
   const [fadeState, setFadeState] = useState("loading");
   const [shouldChangeWhite, setShouldChangeWhite] = useState(true);
-  
 
   useEffect(() => {
     // Calculate the number of logos based on the viewport dimensions
@@ -25,9 +24,10 @@ const LoadingScreen = () => {
     if (fadeState === "loading") {
       setTimeout(() => {
         setFadeState("fading");
+        setShouldChangeWhite(false);
       }, 3000);
     } else if (fadeState === "fading") {
-        setShouldChangeWhite(false);
+      setShouldChangeWhite(false);
     }
   }, [fadeState]);
 

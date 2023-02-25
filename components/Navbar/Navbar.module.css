@@ -1,13 +1,22 @@
-/* Navbar.module.css */
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 180px;
   display: flex;
   flex-direction: column;
   background-color: inherit;
+  z-index: 100;
+  animation: fadeIn 4s ease forwards;
 }
 
 .navbarList {
