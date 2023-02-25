@@ -1,0 +1,46 @@
+/*.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+*/
+.loading-screen {
+  /* Create a grid of logos that fills the screen */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+  max-height: 99vh;
+  overflow-y: hidden;
+  width: 99vw;
+  padding: 0;
+  margin: 0;
+}
+
+.loading-screen__logo {
+  /* Size and margin for each logo */
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.loading-screen__logo-container {
+  /* Position the logos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
