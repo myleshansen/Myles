@@ -43,7 +43,7 @@ const LoadingScreen = () => {
               isWhite ? styles["loading-screen__logo--white"] : ""
             }`}
           >
-            <Image src="/logo.svg" alt="Logo" width={100} height={100} />
+            <Image src="/logo-line.svg" alt="Logo" width={100} height={100} />
           </div>
         );
       })}
