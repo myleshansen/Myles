@@ -14,7 +14,26 @@
   top: 0;
   left: 0;
   z-index: 100;
-  transition: opacity 1s ease-in-out;
+}
+
+.loading-screen-transition {
+  /* Create a grid of logos that fills the screen */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: opacity 2s ease-out;
+  opacity: 0;
 }
 
 .loading-screen.fading {

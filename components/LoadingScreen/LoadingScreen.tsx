@@ -5,6 +5,8 @@ import styles from "./LoadingScreen.module.css";
 const LoadingScreen = () => {
   const [numLogos, setNumLogos] = useState(0);
   const [fadeState, setFadeState] = useState("loading");
+  const [shouldChangeWhite, setShouldChangeWhite] = useState(true);
+  
 
   useEffect(() => {
     // Calculate the number of logos based on the viewport dimensions
@@ -24,17 +26,19 @@ const LoadingScreen = () => {
       setTimeout(() => {
         setFadeState("fading");
       }, 3000);
+    } else if (fadeState === "fading") {
+        setShouldChangeWhite(false);
     }
   }, [fadeState]);
 
   const WHITE_LOGO_THRESHOLD = 0.2; // Adjust this value to change the amount of white logos
 
   return (
-    <div className={`${styles["loading-screen"]} ${fadeState}`}>
+    <div className={`${fadeState === "loading" ? styles["loading-screen"] : styles["loading-screen-transition"]}`}>
       {/* Repeat the logo to fill the container */}
       {[...Array(numLogos)].map((_, index) => {
         const random = Math.random();
-        const isWhite = random < WHITE_LOGO_THRESHOLD;
+        const isWhite = shouldChangeWhite && random < WHITE_LOGO_THRESHOLD;
 
         return (
           <div
@@ -43,7 +47,13 @@ const LoadingScreen = () => {
               isWhite ? styles["loading-screen__logo--white"] : ""
             }`}
           >
-            <Image src="/logo-line.svg" alt="Logo" width={100} height={100} />
+            <Image
+              src="/logo-line.svg"
+              alt="Logo"
+              width={100}
+              height={100}
+              priority
+            />
           </div>
         );
       })}
