@@ -30,10 +30,10 @@
   /* do your own styles */
   .intro-about {
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     text-size-adjust: auto;
     margin-left: 2rem;
-    max-width: 50vw;
+    max-width: 80vw;
     animation: fadeIn 4s ease forwards;
   }
 }
