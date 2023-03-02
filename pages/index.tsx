@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar/Navbar";
-import Intro from "@/components/Intro/Intro";
+import About from "@/components/About/About";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
@@ -31,7 +31,7 @@ export default function Home() {
         <div>
           {
             <main>
-              <Intro />
+              <About />
               <Navbar />
             </main>
           }
