@@ -1,4 +1,4 @@
-import styles from "./About.module.css";
+import styles from "./Intro.module.css";
 
 const About = () => {
   return (

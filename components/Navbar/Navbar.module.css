@@ -52,6 +52,7 @@
     text-size-adjust: auto;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    color: black;
   }
 
   .navbarLink:hover {
