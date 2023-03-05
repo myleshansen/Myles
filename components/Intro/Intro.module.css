@@ -14,6 +14,11 @@
   }
 }
 
+.intro {
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (any-pointer: coarse) {
   /* do your own styles */
   .intro-about {

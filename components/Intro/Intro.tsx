@@ -1,6 +1,6 @@
 import styles from "./Intro.module.css";
 
-const About = () => {
+const Intro = () => {
   return (
     <div className={styles.intro}>
       <div className={styles["intro-about"]}>
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Intro;

@@ -2,9 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar/Navbar";
-import About from "@/components/Intro/Intro";
+import Intro from "@/components/Intro/Intro";
+import About from "@/components/About/About";
+import Work from "@/components/Work/Work";
+import Contact from "@/components/Contact/Contact";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,11 +32,14 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen />
       ) : (
-        <div>
+        <div className={styles.main}>
           {
             <main>
-              <About />
+              <Intro />
               <Navbar />
+              <About />
+              <Work />
+              <Contact />
             </main>
           }
         </div>
