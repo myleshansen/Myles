@@ -14,6 +14,7 @@
   top: 0;
   left: 0;
   z-index: 100;
+  cursor: none;
 }
 
 .loading-screen-transition {
@@ -34,6 +35,7 @@
   z-index: 100;
   transition: opacity 2s ease-out;
   opacity: 0;
+  cursor: none;
 }
 
 .loading-screen.fading {

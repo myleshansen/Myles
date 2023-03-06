@@ -9,7 +9,6 @@ import Contact from "@/components/Contact/Contact";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
-
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -35,8 +34,10 @@ export default function Home() {
         <div className={styles.main}>
           {
             <main>
-              <Intro />
-              <Navbar />
+              <div className={styles.intro}>
+                <Intro />
+                <Navbar/>
+              </div>
               <About />
               <Work />
               <Contact />

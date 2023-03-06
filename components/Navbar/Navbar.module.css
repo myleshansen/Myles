@@ -24,7 +24,7 @@
 /* if device has touch screen */
 @media (any-pointer: coarse) {
   .navbar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100vw;
     margin-bottom: 1rem;
@@ -102,13 +102,18 @@
 /* if device has no touch screen */
 @media (any-pointer: fine) {
   .navbar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100vw;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     animation: fadeIn 4s ease forwards;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .navbarList {

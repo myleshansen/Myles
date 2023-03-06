@@ -1,4 +1,4 @@
-*{
+* {
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -6,22 +6,28 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }

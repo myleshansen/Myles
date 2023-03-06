@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Raleway-Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../public/fonts/Raleway-ExtraLight.ttf") format("truetype");
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.number {
+  font-family: 'Raleway-Black', sans-serif;
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.logo {
+  margin-left: 2rem;
+}
