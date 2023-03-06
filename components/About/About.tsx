@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 import styles from "./About.module.css";
-import { FaAngleDoubleDown, FaArrowDown } from 'react-icons/fa';
+import { FaAngleDoubleDown, FaArrowDown } from "react-icons/fa";
 import Link from "next/link";
 
 const About = () => {
@@ -16,8 +16,8 @@ const About = () => {
         <div className={styles["about-text"]}>
           <p>
             I am currently a senior undergrad studying computer science at CU
-            Boulder. I am interested in full stack developer, and I am currently
-            learning more about data science and machine learning. I am looking
+            Boulder. I am interested in full stack development, and am currently
+            learning about data science and machine learning. I am looking
             for a full time position as a software engineer.
           </p>
         </div>
@@ -42,12 +42,14 @@ const About = () => {
             </ul>
           </div>
           <p className={styles["skills-footer"]}>
-            
+            Outside of my work, I&apos;m interested in all facets of design. I
+            also love working out and staying active. I dabble in just about
+            everything.
           </p>
           <div id="projects" className={styles["transition-container"]}>
             <h1 className={styles["experience-transition"]}>Projects</h1>
             <Link href="#projects">
-              <FaArrowDown className={styles["transition-arrow"]}/>
+              <FaArrowDown className={styles["transition-arrow"]} />
             </Link>
           </div>
         </div>
@@ -64,6 +66,7 @@ const About = () => {
               alt=""
               fill
               className={styles["about-img"]}
+              priority
             />
           ) : (
             <Image
@@ -71,9 +74,11 @@ const About = () => {
               alt=""
               fill
               className={styles["about-img"]}
+              priority
             />
           )}
         </div>
+        <div className={styles.vl}></div>
       </div>
     </div>
   );

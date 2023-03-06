@@ -118,4 +118,13 @@
   position: relative !important;
   object-fit: cover;
   border-radius: 5%;
+  /*filter: invert(1);*/
+  /*filter:blur(30px);*/
+}
+
+.vl {
+  border-left: 2px solid #000;
+  height: 75%;
+  margin-top: 1rem;
+  margin-left: 6rem;
 }
