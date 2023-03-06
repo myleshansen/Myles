@@ -42,9 +42,7 @@ const About = () => {
             </ul>
           </div>
           <p className={styles["skills-footer"]}>
-            Outside of my work, I&apos;m interested in following the
-            developments of science. I also play a lot of video games. And make
-            TikToks.
+            
           </p>
           <div id="projects" className={styles["transition-container"]}>
             <h1 className={styles["experience-transition"]}>Projects</h1>
