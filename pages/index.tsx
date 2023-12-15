@@ -9,7 +9,7 @@ import Contact from "@/components/Contact/Contact";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
