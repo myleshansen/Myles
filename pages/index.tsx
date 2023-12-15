@@ -8,6 +8,7 @@ import Work from "@/components/Work/Work";
 import Contact from "@/components/Contact/Contact";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,13 +37,14 @@ export default function Home() {
             <main>
               <div className={styles.intro}>
                 <Intro />
-                <Navbar/>
+                <Navbar />
               </div>
               <About />
               <Work />
               <Contact />
             </main>
           }
+          <Analytics />
         </div>
       )}
     </>

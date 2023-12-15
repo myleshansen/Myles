@@ -5,7 +5,7 @@ const Intro = () => {
     <div className={styles.intro}>
       <div className={styles["intro-about"]}>
         <p>
-          Hi I&apos;m Myles, a full-stack developer and computer science undergraduate with a
+          Hi I&apos;m <span style={{ color: "#3f9af7" }}>Myles</span>, a full-stack developer and computer science undergraduate with a
           passion for design and exploring new technologies. With
           expertise in various programming languages and tools, I deliver
           high-quality software solutions. Let&apos;s work together to bring your
