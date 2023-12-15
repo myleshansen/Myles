@@ -11,7 +11,7 @@ const About = () => {
     <div id="about" className={styles.about}>
       <div className={styles["about-left"]}>
         <div className={styles.title}>
-          <h1>Here's a little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
+          <h1>Here&apos;s a little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
         </div>
         <div className={styles["about-text"]}>
           <p>
