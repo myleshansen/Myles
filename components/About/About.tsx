@@ -11,7 +11,7 @@ const About = () => {
     <div id="about" className={styles.about}>
       <div className={styles["about-left"]}>
         <div className={styles.title}>
-          <h1>Here&apos;s a little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
+          <h1>A little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
         </div>
         <div className={styles["about-text"]}>
           <p>
@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className={styles["about-skills"]}>
           <h3 className={styles["about-skills-header"]}>
-            Here are some technologies I work with
+            Some technologies I work with
           </h3>
           <div className={styles["skills-container"]}>
             <ul className={styles["skills-list"]}>
