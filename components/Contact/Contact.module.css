@@ -1,6 +1,8 @@
 .contact {
   display: flex;
+  flex-direction: column;
   height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -25,4 +27,14 @@
   right: 0;
   position: absolute;
   margin-right: 4rem;
+}
+
+.contact-footer {
+  font-family: "Raleway-ExtraLight", sans-serif;
+  font-size: 2rem;
+  color: #000;
+  margin-top: auto;
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }

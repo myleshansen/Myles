@@ -12,6 +12,9 @@ const Contact = () => {
           <h1>Connect with me!</h1>
         </div>
       </div>
+      <footer className={styles["contact-footer"]}>
+        Myles Hansen 2023 ©
+      </footer>
     </div>
   );
 };

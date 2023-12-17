@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Intro from "@/components/Intro/Intro";
@@ -33,7 +32,7 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen />
       ) : (
-        <div className={styles.main}>
+        <div className={styles.main} >
           {
             <main>
               <div className={styles.intro}>
