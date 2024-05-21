@@ -26,6 +26,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ children }) => {
             cursor?.classList.add(styles.inactive);
         };
 
+
         const currentRef = ref.current;
         if (currentRef) {
             currentRef.addEventListener("mousemove", moveCursor);

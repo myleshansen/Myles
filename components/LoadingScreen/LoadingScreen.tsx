@@ -43,9 +43,8 @@ const LoadingScreen = () => {
         return (
           <div
             key={index}
-            className={`${styles["loading-screen__logo"]} ${
-              isWhite ? styles["loading-screen__logo--white"] : ""
-            }`}
+            className={`${styles["loading-screen__logo"]} ${isWhite ? styles["loading-screen__logo--white"] : ""
+              }`}
           >
             <Image
               src="/logo-line.svg"

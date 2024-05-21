@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Navbar from "@/components/Navbar/Navbar";
 import Intro from "@/components/Intro/Intro";
 import About from "@/components/About/About";
 import Work from "@/components/Work/Work";
@@ -32,13 +31,10 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen />
       ) : (
-        <div className={styles.main} >
+        <div>
           {
             <main>
-              <div className={styles.intro}>
-                <Intro />
-                <Navbar />
-              </div>
+              <Intro />
               <About />
               <Work />
               <Contact />

@@ -7,29 +7,27 @@ const Project = (props: any) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <CustomCursor>
-      <div
-        id="project"
-        className={`${styles.project} ${hover ? styles.hover : ''}`}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-        <div className={styles.content}>
-          <div className={styles.number}>
-            <h1>{props.num}</h1>
-          </div>
-          <div className={styles.logo}>
-            <Image
-              src={props.logoSrc}
-              alt="Logo"
-              width={props.width}
-              height={props.height}
-              priority
-            />
-          </div>
+    <div
+      id="project"
+      className={`${styles.project} ${hover ? styles.hover : ''}`}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      <div className={styles.content}>
+        <div className={styles.number}>
+          <h1>{props.num}</h1>
+        </div>
+        <div className={styles.logo}>
+          <Image
+            src={props.logoSrc}
+            alt="Logo"
+            width={props.width}
+            height={props.height}
+            priority
+          />
         </div>
       </div>
-    </CustomCursor>
+    </div>
   );
 };
 
