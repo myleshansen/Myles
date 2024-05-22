@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,9 +32,11 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen />
       ) : (
+
         <div>
           {
             <main>
+              <Navbar />
               <Intro />
               <About />
               <Work />

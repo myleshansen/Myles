@@ -9,7 +9,12 @@ module.exports = {
         "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                jacquard: ['var(--font-jacquard)'],
+                raleway_e_light: ['var(--font-raleway-e-light)'],
+            },
+        },
     },
     plugins: [],
 }

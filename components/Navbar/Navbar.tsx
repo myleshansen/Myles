@@ -1,29 +1,24 @@
 import Link from "next/link";
 import { useState } from "react";
-import styles from "./Navbar.module.css";
-import {
-  SwapRightOutlined,
-  CaretDownOutlined,
-  DownOutlined,
-} from "@ant-design/icons";
-
-import { FaChevronDown } from 'react-icons/fa';
+import Image from "next/image";
 
 const Navbar = () => {
-  const [isClicked, setIsClicked] = useState(false);
   return (
-    <>
-      <nav className={styles.navbar}>
-        <Link href="#about" className={styles.navbarLink}>
-        {isClicked ? (
-          <FaChevronDown style={{display: 'none'}}/>
-        ) : (
-          <FaChevronDown className={styles.arrow} onClick={() => setIsClicked(true)}/>
-        )}
-        </Link>
+    <header>
+      <nav className="flex flex-column items-center justify-between p-10 sm:px-16">
+        <div className="">
+          <h1 className="font-jacquard text-[2vw]">H</h1>
+          {/* <Image
+            src={"/logo-line.svg"}
+            alt="Logo"
+            width={50}
+            height={50}
+            priority
+          /> */}
+        </div>
       </nav>
-    </>
-  );
+    </header>
+  )
 };
 
 export default Navbar;

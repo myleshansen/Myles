@@ -25,6 +25,8 @@
   src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
+
+
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
@@ -36,7 +38,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  cursor: none;
   background-color: whitesmoke;
   color: #151717;
 }

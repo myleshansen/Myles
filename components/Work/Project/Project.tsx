@@ -15,7 +15,7 @@ const Project = (props: any) => {
     >
       <div className={styles.content}>
         <div className={styles.number}>
-          <h1>{props.num}</h1>
+          <h1 className='font-jacquard'>{props.num}</h1>
         </div>
         <div className={styles.logo}>
           <Image
