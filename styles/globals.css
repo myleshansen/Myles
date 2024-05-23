@@ -1,6 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   -ms-overflow-style: none;
+  cursor: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -19,6 +25,8 @@
   src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
+
+
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
@@ -30,4 +38,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: whitesmoke;
+  color: #151717;
 }

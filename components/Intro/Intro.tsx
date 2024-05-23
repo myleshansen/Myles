@@ -1,18 +1,25 @@
-import styles from "./Intro.module.css";
+import React, { useEffect, useRef } from 'react';
 
 const Intro = () => {
   return (
-    <div className={styles.intro}>
-      <div className={styles["intro-about"]}>
-        <p>
-          Hi I&apos;m <span style={{ color: "#3f9af7" }}>Myles</span>, a full-stack developer and computer science undergraduate with a
-          passion for design and exploring new technologies. With
-          expertise in various programming languages and tools, I deliver
-          high-quality software solutions. Let&apos;s work together to bring your
-          ideas to life!
-        </p>
-      </div>
-    </div>
+    <section className='flex flex-col gap-8'>
+      <section>
+        <section className='sticky -top-[40%] flex justify-start mb-14 h-fit'>
+          <div className='flex min-w-full'>
+            <div className='w-full p-4 flex flex-col items-center justify-center sm:bg-unset sm:flex sm:items-center sm:justify-center sm:bg-auto sm:bg-no-repeat'>
+              <div className='mb-4 sm:mt-10'>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-right'>[2024]</p></div>
+                <h1 className='font-jacquard text-[20vw] sm:text-[17.5vw] leading-[0.5] tracking-[-5px] '>Software</h1>
+                <h1 className='font-jacquard text-[14.5vw] sm:text-[13vw]'> - Engineer - </h1>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-left'>[San Francisco]</p></div>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-center'>myles hansen</p></div>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-center'>I build <span style={{ color: "#3f9af7" }}>things</span>.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
   );
 };
 
