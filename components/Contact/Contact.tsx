@@ -12,7 +12,7 @@ const Contact = () => {
         </div>
       </div>
       <footer>
-        Myles Hansen 2023 ©
+        Myles Hansen 2024 ©
       </footer>
     </div>
   );

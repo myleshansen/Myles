@@ -8,10 +8,10 @@ import Link from "next/link";
 const About = () => {
   const [isHovering, setIsHovering] = useState(false);
   return (
-    <div id="about" className='flex max-h-[80vh]'>
+    <div id="about" className='flex max-h-[75vh]'>
       <div className='flex flex-col max-w-[50vw] mt-48 ml-20'>
         <div className='mb-20'>
-          <h1 className="font-raleway_e_light font-bold text-8xl">A little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
+          <h1 className="font-raleway_e_light font-bold text-8xl">A little about <span style={{ color: "#3f9af7" }}>me</span>...</h1>
         </div>
         <div className='font-raleway_e_light text-3xl mb-12'>
           <p>
@@ -46,9 +46,6 @@ const About = () => {
           </p>
           <div id="projects" className='flex items-center'>
             <h1 className='font-raleway_bold text-8xl font-bold mt-8'>work<span style={{ color: "#3f9af7" }}>.</span></h1>
-            <Link href="#projects">
-              <FaArrowDown className='ml-8 mt-8 text-7xl hover:text-[#3f9af7]' />
-            </Link>
           </div>
         </div>
       </div>
