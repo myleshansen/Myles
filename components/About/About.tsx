@@ -8,47 +8,46 @@ import Link from "next/link";
 const About = () => {
   const [isHovering, setIsHovering] = useState(false);
   return (
-    <div id="about" className='flex min-h-screen'>
+    <div id="about" className='flex max-h-[80vh]'>
       <div className='flex flex-col max-w-[50vw] mt-48 ml-20'>
         <div className='mb-20'>
           <h1 className="font-raleway_e_light font-bold text-8xl">A little about <span style={{ color: "#3f9af7" }}>me...</span></h1>
         </div>
-        <div className={styles["about-text"]}>
+        <div className='font-raleway_e_light text-3xl mb-12'>
           <p>
-            I am currently a <span style={{ color: "#3f9af7" }}>blockchain</span> engineer at Deloitte. I graduated from the
-            University of Colorado, Boulder studying computer science.
-            I am interested in just about any technology surrounding blockchain/DeFi, AI, and web development.
+            Current <span style={{ color: "#3f9af7" }}>software</span> engineer at Deloitte.
+            Known mainly for security, blockchain/DeFi, AI, and full-stack engineering.
           </p>
         </div>
-        <div className={styles["about-skills"]}>
-          <h3 className={styles["about-skills-header"]}>
+        <div>
+          <h3 className='font-raleway_e_light_italic text-4xl font-bold mb-12'>
             Some technologies I work with
           </h3>
-          <div className={styles["skills-container"]}>
-            <ul className={styles["skills-list"]}>
+          <div className='flex flex-row flex-wrap mt-4'>
+            <ul className='font-raleway_e_light text-2xl mr-16 mb-4 list-disc pl-[40px]'>
               <li>JavaScript (ES6+)/TypeScript</li>
-              <li>Solidity</li>
-              <li>React/Next</li>
+              <li>Go</li>
+              <li>React/Next.js</li>
+              <li>Solidtiy</li>
               <li>Ethereum</li>
-              <li>Node.js</li>
             </ul>
-            <ul className={styles["skills-list"]}>
+            <ul className='font-raleway_e_light text-2xl mr-16 mb-4 list-disc pl-[40px]'>
+              <li>Rust</li>
               <li>Python</li>
-              <li>C++</li>
               <li>Java</li>
               <li>AWS</li>
-              <li>MongoDB</li>
+              <li>PostgreSQL</li>
             </ul>
           </div>
-          <p className={styles["skills-footer"]}>
+          <p className='font-raleway_e_light text-2xl mt-4'>
             Outside of my work, I&apos;m interested in all facets of design. I
             also love staying active & exploring my many hobbies. I dabble in just about
             everything.
           </p>
-          <div id="projects" className={styles["transition-container"]}>
-            <h1 className={styles["experience-transition"]}>My Work</h1>
+          <div id="projects" className='flex items-center'>
+            <h1 className='font-raleway_bold text-8xl font-bold mt-8'>work<span style={{ color: "#3f9af7" }}>.</span></h1>
             <Link href="#projects">
-              <FaArrowDown className={styles["transition-arrow"]} />
+              <FaArrowDown className='ml-8 mt-8 text-7xl hover:text-[#3f9af7]' />
             </Link>
           </div>
         </div>

@@ -11,6 +11,9 @@ const Intro = () => {
                 <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-right'>[2024]</p></div>
                 <h1 className='font-jacquard text-[20vw] sm:text-[17.5vw] leading-[0.5] tracking-[-5px] '>Software</h1>
                 <h1 className='font-jacquard text-[14.5vw] sm:text-[13vw]'> - Engineer - </h1>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-left'>[San Francisco]</p></div>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-center'>myles hansen</p></div>
+                <div><p className='font-mono font-thin text-[0.5rem] sm:text-[0.65rem] text-center'>I build <span style={{ color: "#3f9af7" }}>things</span>.</p></div>
               </div>
             </div>
           </div>
