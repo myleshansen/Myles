@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="">
           <h1 className="font-jacquard text-5xl">H</h1>
         </div>
-        <div className="hidden sm:flex sm:gap-5 sm:font-mono sm:font-thin sm:uppercase sm:text-[0.75rem]">
+        <div className="gap-5 font-mono font-thin uppercase text-[0.75rem]">
           <Link href="/blog">blog</Link>
         </div>
       </nav>
