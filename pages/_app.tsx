@@ -36,9 +36,7 @@ const ralewayBold = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${jacquard.variable} ${ralewayELight.variable} ${ralewayELightItalic.variable} ${ralewayBold.variable}`}>
-      <CustomCursor>
-        <Component {...pageProps} />
-      </CustomCursor>
+      <Component {...pageProps} />
     </main>
   );
 }

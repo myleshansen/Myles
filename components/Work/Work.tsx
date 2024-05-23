@@ -3,11 +3,13 @@ import Project from "./Project/Project";
 const Work = () => {
   return (
     <section className="p-5 sm:p-10">
-      <div id="work" className='flex items-center font-rubik text-[0.5rem] gap-[4vw] p-3' >
-        <Project num={'01'} logoSrc={'/festo-logo.svg'} width={200} height={200} borderRadius={false} />
-        <Project num={'02'} logoSrc={'/deloitte-logo.png'} width={200} height={200} borderRadius={false} />
-        <Project num={'03'} logoSrc={'/leasr-logo.png'} width={100} height={100} borderRadius={true} />
-        <Project num={'04'} logoSrc={'/logo-line.svg'} width={100} height={100} borderRadius={false} />
+      <div id="work" className='flex flex-col justify-evenly h-[50%] min-w-full' >
+        <Project num={'01'} company={'Deloitte'} position={'Software Engineer'} yearStart={'2023'} yearEnd={'present'} />
+        <hr className="bg-blue mt-3 min-w-full" />
+        <Project num={'02'} company={'Festo'} position={'Software Engineer'} yearStart={'2022'} yearEnd={'2023'} />
+        <hr className="bg-blue mt-3 min-w-full" />
+        <Project num={'03'} company={'Leasr'} position={'React Native Developer'} yearStart={'2019'} yearEnd={'2020'} />
+        <hr className="bg-black mt-3 min-w-full" />
       </div>
     </section>
   );

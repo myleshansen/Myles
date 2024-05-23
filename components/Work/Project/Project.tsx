@@ -1,32 +1,14 @@
-import { useState } from 'react';
-import styles from "./Project.module.css";
-import Image from "next/image";
-import CustomCursor from "@/components/CustomCursor/CustomCursor";
-
 const Project = (props: any) => {
-  const [hover, setHover] = useState(false);
 
   return (
-    <div
-      id="project"
-      className={`${styles.project} ${hover ? styles.hover : ''}`}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <div className={styles.content}>
-        <div className={styles.number}>
-          <h1 className='font-jacquard'>{props.num}</h1>
-        </div>
-        <div className={styles.logo}>
-          <Image
-            src={props.logoSrc}
-            alt="Logo"
-            width={props.width}
-            height={props.height}
-            priority
-          />
-        </div>
+    <div className='flex items-center font-rubik text-[0.5rem] gap-[4vw] p-3 min-w-full'>
+      <div className="">
+        <h1 className="font-jacquard text-[3rem] sm:text-[2rem]">{props.num}</h1>
+        <h1 className="font-mono text-[0.9rem] sm:text-[1rem]">{props.company}</h1>
+        <p className="text-[0.65rem] mt-1">{props.position}</p>
       </div>
+      <p className="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">{props.yearStart} - {props.yearEnd}</p>
+
     </div>
   );
 };
