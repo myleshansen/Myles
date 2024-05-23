@@ -7,7 +7,7 @@ const About = () => {
   const [isHovering, setIsHovering] = useState(false);
   return (
     <div id="about" className='flex max-h-[90vh]'>
-      <div className='flex flex-col max-w-[50vw] mt-48 ml-20'>
+      <div className='hidden lg:block flex flex-col max-w-[50vw] mt-48 ml-20'>
         <div className='mb-20'>
           <h1 className="font-raleway_e_light font-bold text-[4.5vw] sm:text-[3.75vw]">A little about <span style={{ color: "#3f9af7" }}>me</span>...</h1>
         </div>
